@@ -35,11 +35,12 @@
   <code><img height="23" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" alt="CSS">CSS</code>
   <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="JavaScript">JavaScript</code>
   <code><img height="25" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React">React</code>
-   <code><img height="25" src="https://i.postimg.cc/BbFrvMNM/vite-js.png" alt="ViteJS">ViteJS</code>
+  <code><img height="25" src="https://i.postimg.cc/BbFrvMNM/vite-js.png" alt="ViteJS">ViteJS</code>
   <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" alt="TypeScript"> TypeScript</code>
   <code><img height="24" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png" alt="TailWind"> TailWindCSS</code>
-  <!-- <code><img height="18" src="https://i.postimg.cc/XJVxTxBT/radix.png" alt="Radix"> Radix</code> -->
+  <code><img height="23" src="https://github.com/dcastil/tailwind-merge/raw/v2.2.2/assets/logo.svg" alt="TailWind Merge"> TailWind Merge</code>
   <code><img height="22" src="https://i.postimg.cc/NMDYcNJT/logo-lucide.png" alt="Lucide React"> Lucide React</code>
+  <code><img height="26" src="https://fakerjs.dev/logo.svg" alt="FakerJS"> FakerJS</code>
   <code><img height="21" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" alt="VS Code"> VS Code</code>
 </p>
 
@@ -51,10 +52,11 @@
 - [ReactJS](https://reactjs.org/) - biblioteca JavaScript para construção de interfaces
 - [Vite](https://vitejs.dev/) - build tool para aplicações web
 - [TypeScript](https://www.typescriptlang.org/) - superset de JavaScript que adiciona tipagem estática ao código
-- [Tailwind](https://tailwindcss.com/) - framework de estilização
+- [TailwindCSS](https://tailwindcss.com/) - framework de estilização
+- [Tailwind Merge](https://www.npmjs.com/package/tailwind-merge) - função que facilita a unir estilizações sem subscrever
+- [FakerJS](https://fakerjs.dev/) - biblioteca de dados fictícios para testar o front-end
+- [DayJS](https://day.js.org/docs/en/installation/typescript) - biblioteca de ajuda a formatar datas
 - [Lucide React](https://lucide.dev/) - biblioteca de ícones 
-<!-- - [Sonner](https://sonner.emilkowal.ski) - biblioteca de notificações  -->
-<!-- - [Radix UI](https://radix-ui.com/) - biblioteca de componentes  -->
 
 <br>
 
@@ -63,24 +65,24 @@
 <table>
   <tr>
     <td>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
+      <li>HTML/ CSS </li>
       <li>React</li>
-    </td>
-    <td>
       <li>TypeScript</li>
       <li>Tailwind</li>
-      <!-- <li>Radix-ui + dialog</li> -->
-      <!-- <li>Sonner toast</li> -->
-      <!-- <li>Date-fns</li> -->
-      <li>Lucide react</li>
-      <li>Componetização</li>
+      <li>Tailwind Merge</li>
     </td>
     <td>
+      <li>DayJS</li>
+      <li>Lucide react</li>
+      <li>Pagination</li>
+      <li>Search</li>
+      <li>Boas práticas</li>
+    </td>
+    <td>
+      <li>React hooks</li>
+      <li>URL state</li>
+      <li>ComponentProps</li>
       <li>Desestruturação</li>
-      <li>LocalStorage</li>
-      <li>Acessibilidade</li>
       <li>Deploy na Vercel</li>
     </td>
   </tr>
@@ -89,12 +91,6 @@
 
 <br>
 
-<!-- Prints do projeto -->
-<!-- <h3> 🎯 Layout </h3>
-
-You can see the project online here.
-<br> -->
-
 <!-- Estructure session -->
 <h3> 🗃️ Estrutura de pastas </h3>
 
@@ -102,50 +98,61 @@ You can see the project online here.
 ├── 📁 public: arquivos públicos
 ├── 📁 src: arquivos do projeto
 │   ├── 📁 assets: arquivos de imagem
-│   ├── 📁 components: pasta com componentes da aplicaçã0
-│   │   ├── header.tsx
+│   ├── 📁 components: pasta com componentes da aplicação
+│   ├──├── 📁 table: componentes que compões a tabela
 │   │   ├── attendee-list.tsx
+│   │   ├── header.tsx
+│   │   ├── icon-button.tsx
+│   │   ├── nav-link.tsx
 │   ├── app.tsx: arquivo que contém a aplicação
 │   ├── index.css: arquivo de estilização com a inicialização do Tailwind
 │   ├── main.tsx: arquivo com a inicialização do React
 ├── index.html: arquivo com a estrutura da aplicação
 ```
+
 <br>
 
 <!-- Execution session -->
-<h3> ⚡ Executando </h3>
+<h3> ⚡ Instalando e executando </h3>
 
-&emsp; &emsp; Precisa ter o [Node.js](https://nodejs.org/en/) instalado na sua máquina para rodar essa aplicação.
+&emsp; Você precisa ter o [Node.js](https://nodejs.org/en/) instalado na sua máquina para rodar essa aplicação.
 
-&emsp; &emsp; Após clonar o repositório, acesse a pasta do projeto e execute os comandos: *npm install* e *npm run dev*.
+<br>
 
+&emsp; Clone ou faça download do repositório, acesse a pasta do projeto e execute os comandos: `npm install` e `npm run dev`
 ```bash
-  git clone https://github.com/MichelleCordeiro/nlw-expert-react-notes.git
+  git clone https://github.com/MichelleCordeiro/nlw-unite-pass-in-server.git
 
   npm install
 
   npm run dev
 ```
 
-&emsp; &emsp; Acesse http://localhost:5173 para visualizar a aplicação.
+<br>
+
+&emsp; Acesse http://localhost:5173 para visualizar o site (front-end) da aplicação.
+
+&emsp; Para a aplicação funcionar é preciso executar também a API (back-end). Você a encontrará [aqui](https://github.com/MichelleCordeiro/nlw-unite-pass-in-server) .
+
 
 <br>
 
 <!-- Future implementations session -->
-<!-- <h2> 🔮 Implementações futuras: </h2>
+<h2> 🔮 Implementações futuras: </h2>
 
-- [ ] implementar edição das notas
-- [ ] armazenar as informações das notas num banco de dados (atual localStorage)
-- [ ] categorizar as notas com tags e cores especificas
-- [ ] exibir as notas por categorias
+- [ ] listar eventos
+- [ ] gerir o cadastro dos eventos
+- [ ] listar participantes de determinado evento, com e sem check-in
+- [ ] gerir o cadastro dos participantes
+- [ ] fazer o check-in manualmente na aplicação
 
-<br> -->
+<br>
 
 <!-- Contacts session -->
 <h3> 👩🏼‍💻 Contatos </h3>
 
 <p>
-  <strong>&emsp; &emsp; Michelle Cordeiro</strong> &emsp; 
+  <strong>&emsp; Michelle Cordeiro</strong> &emsp; 
   <a href="https://www.linkedin.com/in/michelle-cordeiro/"> 
     <img src="https://github.com/MichelleCordeiro/MichelleCordeiro/blob/main/logos/linkedin.png?raw=true" alt="logo linkedin" width="20" /> LinkedIn
   </a> &emsp;
